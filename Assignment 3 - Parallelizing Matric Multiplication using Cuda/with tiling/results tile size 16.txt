@@ -1,0 +1,30 @@
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000
+Execution Time: 32.078175 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000
+Execution Time: 203.555908 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000
+Execution Time: 463.899780 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000
+Execution Time: 1209.835693 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000
+Execution Time: 2329.417480 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000
+Execution Time: 4029.329590 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000
+Execution Time: 6469.350586 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000
+Execution Time: 9830.050781 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000
+Execution Time: 14203.209961 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000
+Execution Time: 19729.265625 ms
+-------------------------------------------------------

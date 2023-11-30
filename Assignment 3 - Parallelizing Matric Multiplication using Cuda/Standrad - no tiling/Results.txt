@@ -1,0 +1,150 @@
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000, block_size=(4, 4)
+Execution Time: 42.693569 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000, block_size=(4, 4)
+Execution Time: 299.169708 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000, block_size=(4, 4)
+Execution Time: 760.357056 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000, block_size=(4, 4)
+Execution Time: 2472.137207 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000, block_size=(4, 4)
+Execution Time: 5851.134277 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000, block_size=(4, 4)
+Execution Time: 11001.480469 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000, block_size=(4, 4)
+Execution Time: 18592.324219 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000, block_size=(4, 4)
+Execution Time: 28231.667969 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000, block_size=(4, 4)
+Execution Time: 41293.171875 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000, block_size=(4, 4)
+Execution Time: 60423.898438 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000, block_size=(8, 8)
+Execution Time: 16.798656 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000, block_size=(8, 8)
+Execution Time: 215.801056 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000, block_size=(8, 8)
+Execution Time: 920.392517 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000, block_size=(8, 8)
+Execution Time: 2582.696289 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000, block_size=(8, 8)
+Execution Time: 5703.814453 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000, block_size=(8, 8)
+Execution Time: 10914.091797 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000, block_size=(8, 8)
+Execution Time: 18896.998047 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000, block_size=(8, 8)
+Execution Time: 29729.935547 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000, block_size=(8, 8)
+Execution Time: 43327.023438 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000, block_size=(8, 8)
+Execution Time: 60764.750000 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000, block_size=(16, 16)
+Execution Time: 22.374657 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000, block_size=(16, 16)
+Execution Time: 215.156281 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000, block_size=(16, 16)
+Execution Time: 910.174500 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000, block_size=(16, 16)
+Execution Time: 2571.663330 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000, block_size=(16, 16)
+Execution Time: 5695.798340 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000, block_size=(16, 16)
+Execution Time: 10839.300781 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000, block_size=(16, 16)
+Execution Time: 18818.230469 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000, block_size=(16, 16)
+Execution Time: 30002.064453 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000, block_size=(16, 16)
+Execution Time: 42715.101562 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000, block_size=(16, 16)
+Execution Time: 60884.703125 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000, block_size=(32, 32)
+Execution Time: 21.606079 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000, block_size=(32, 32)
+Execution Time: 214.531143 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000, block_size=(32, 32)
+Execution Time: 944.338318 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000, block_size=(32, 32)
+Execution Time: 2604.458496 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000, block_size=(32, 32)
+Execution Time: 5713.778809 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000, block_size=(32, 32)
+Execution Time: 10845.079102 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000, block_size=(32, 32)
+Execution Time: 19130.570312 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000, block_size=(32, 32)
+Execution Time: 29440.201172 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000, block_size=(32, 32)
+Execution Time: 43496.929688 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000, block_size=(32, 32)
+Execution Time: 61054.878906 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=1000, colsA=3000, colsB=2000, block_size=(64, 64)
+Execution Time: 21.312256 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=2000, colsA=6000, colsB=4000, block_size=(64, 64)
+Execution Time: 213.490814 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=3000, colsA=9000, colsB=6000, block_size=(64, 64)
+Execution Time: 898.500427 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=4000, colsA=12000, colsB=8000, block_size=(64, 64)
+Execution Time: 2574.256104 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=5000, colsA=15000, colsB=10000, block_size=(64, 64)
+Execution Time: 5671.212891 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=6000, colsA=18000, colsB=12000, block_size=(64, 64)
+Execution Time: 10896.552734 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=7000, colsA=21000, colsB=14000, block_size=(64, 64)
+Execution Time: 19028.429688 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=8000, colsA=24000, colsB=16000, block_size=(64, 64)
+Execution Time: 29815.992188 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=9000, colsA=27000, colsB=18000, block_size=(64, 64)
+Execution Time: 43426.769531 ms
+-------------------------------------------------------
+Running matrix multiplication for rowsA=10000, colsA=30000, colsB=20000, block_size=(64, 64)
+Execution Time: 60854.277344 ms
+-------------------------------------------------------
