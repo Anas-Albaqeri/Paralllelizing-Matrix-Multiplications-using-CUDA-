@@ -22,7 +22,7 @@ By choosing correct dimensions for the working teams i.e. the blocks and grids, 
 
 The following CUDA programs were all run using Google Colab- free access, Google Colab provides an Nvidia Tesla T4 GPU with 16 gb of VRAM and total of 1024 threads which is very capable and therefore all tests will be run using GPU even sequentially to get a real reflection on speedup. 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled.png)
+![Untitled](Images/Untitled.png)
 
 # Matrix Multiplication without using tiling
 
