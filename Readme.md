@@ -1,8 +1,6 @@
-# Assignment 3 (Matrix Multiplication using CUDA)
+Matrix Multiplication using CUDA
 
 Anas Albaqeri 
-
-202004427 
 
 Git: [https://github.com/Anas-Albaqeri/Paralllelizing-Matrix-Multiplications-using-CUDA-/tree/main](https://github.com/Anas-Albaqeri/Paralllelizing-Matrix-Multiplications-using-CUDA-/tree/main)
 
