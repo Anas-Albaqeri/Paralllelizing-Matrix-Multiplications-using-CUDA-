@@ -79,9 +79,9 @@ __global__ void multiplyMatrices(const float *inputMatrixA, const float *inputMa
 
 Multiplication is done column by row like shown in the following figure: 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%201.png)
+![Untitled](Images/Untitled%201.png)
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%202.png)
+![Untitled](Images/Untitled%202.png)
 
 In a guide on matrix multiplication using CUDA by Analytics Vidhya (2020), the recommendation is made to arrange thread-blocks and the grid in a 2-D fashion when multiplying 2-D matrices. The source notes that in most modern NVIDIA GPUs, one thread-block can accommodate a maximum of 1024 threads (Analytics Vidhya, 2020).
 
@@ -346,27 +346,27 @@ Results Output file available on GitHub:
 
 [](https://github.com/Anas-Albaqeri/Paralllelizing-Matrix-Multiplications-using-CUDA-/blob/main/Assignment%203%20-%20Parallelizing%20Matric%20Multiplication%20using%20Cuda/Standrad%20-%20no%20tiling/Results.txt)
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%203.png)
+![Untitled](Images/Untitled%203.png)
 
 ************************************A. block size = 4 x 4, matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)** 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%204.png)
+![Untitled](Images/Untitled%204.png)
 
 ************************************B. block size = 8 x 8, matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)** 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%205.png)
+![Untitled](Images/Untitled%205.png)
 
 ************************************C. block size = 16 x 16, matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)**
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%206.png)
+![Untitled](Images/Untitled%206.png)
 
 ************************************D. block size = 32 x 32, matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)**
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%207.png)
+![Untitled](Images/Untitled%207.png)
 
 ************************************E. block size = 64 x 64, matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)**
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%208.png)
+![Untitled](Images/Untitled%208.png)
 
 We notice that all the previous results look almost identical indicating a rather low correlation between number of threads used in the test and performance acquired. 
 
@@ -382,7 +382,7 @@ Please note that I also ran my sequential code locally on my machine and it took
 
 running the test on these sizes (10000x20000, 20000x30000) we acquire this sequential time: 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%209.png)
+![Untitled](Images/Untitled%209.png)
 
 ### Speedup and Efficiency:
 
@@ -428,9 +428,9 @@ First let us explain what tiling means in the context of matrix multiplication. 
 
 In the context of matrix multiplication, tiling operates by breaking down the input matrices into smaller tiles, and each thread within a block collaboratively loads a subset of the matrices into the shared memory. This collaborative loading ensures that certain elements are only loaded once from the global memory, effectively reducing the overall number of accesses to global memory. The reduction in global memory traffic is proportional to the dimensions of the blocks used in tiling, providing a scalable solution. Tiling is analogous to a carpooling arrangement, where threads act as commuters accessing data, and DRAM access requests act as vehicles. By having multiple threads accessing data from the same DRAM location, they form a "carpool," combining their accesses into one DRAM request and mitigating traffic congestion. Moreover, tiling introduces the concept of locality, focusing on smaller subsets of input matrix elements in each phase, allowing threads to collaboratively load and use shared memory efficiently. Overall, tiling proves to be a powerful technique for minimizing memory traffic, leveraging shared memory effectively, and optimizing the parallel execution of matrix multiplications in CUDA.
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2010.png)
+![Untitled](Images/Untitled%2010.png)
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2011.png)
+![Untitled](Images/Untitled%2011.png)
 
 ## Code
 
@@ -512,21 +512,21 @@ The results file is available on GitHub, here is a screenshot of some of the res
 
 [](https://github.com/Anas-Albaqeri/Paralllelizing-Matrix-Multiplications-using-CUDA-/blob/main/Assignment%203%20-%20Parallelizing%20Matric%20Multiplication%20using%20Cuda/with%20tiling/results%20tile%20size%2016.txt)
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2012.png)
+![Untitled](Images/Untitled%2012.png)
 
 ************************************A. tile size = 16 matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)** 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2013.png)
+![Untitled](Images/Untitled%2013.png)
 
 ************************************B. tile size = 32  matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)** 
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2014.png)
+![Untitled](Images/Untitled%2014.png)
 
 Note that tile size 64 was having calculation problems as for **matrices sizes = (1000x2000 - 2000x3000) ———> (10000x20000 - 20000x30000)** 
 
 it performed the calculations in sub 20 seconds which makes sense. However the recorder was not giving precise data at all: note on the left is the actual time it took to run the program in comparison to the execution time returned.
 
-![Untitled](Assignment%203%20(Matrix%20Multiplication%20using%20CUDA)%201d7c8821029240b7927a618e9a1b92d8/Untitled%2015.png)
+![Untitled](Images/Untitled%2015.png)
 
 for that reason we will calculate the speed up and performance measures using tile size set to 16.
 
